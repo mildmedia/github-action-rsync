@@ -38,7 +38,7 @@ inputs:
   remote_port:
     description: 'The remote port'
     required: false
-    default: 22
+    default: 8899
   remote_user:
     description: 'The remote user'
     required: true
@@ -53,5 +53,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 branding:
-  icon: 'send'  
+  icon: 'send'
   color: 'gray-dark'
