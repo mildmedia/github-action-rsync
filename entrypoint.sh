@@ -28,5 +28,5 @@ else
     
     echo $'\n' "------ RELOADING PERMISSION -------------------" $'\n'
     
-    ssh -o StrictHostKeyChecking=no -t $DSN "sudo chown -R $OWNER:$GROUP $INPUT_REMOTE_PATH"
+    ssh -o StrictHostKeyChecking=no -t $DSN -p $INPUT_REMOTE_PORT "sudo chown -R $OWNER:$GROUP $INPUT_REMOTE_PATH"
 fi
