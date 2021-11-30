@@ -38,7 +38,7 @@ inputs:
   remote_port:
     description: 'The remote port'
     required: false
-    default: ${{ secrets.SuperSecret }}
+    default: ${{ secrets.PORT }}
   remote_user:
     description: 'The remote user'
     required: true
